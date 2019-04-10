@@ -98,7 +98,7 @@ export default class login extends Component {
 
         }
 
-        axios.post('http://localhost:4000/tourism/login', login)
+        axios.post('http://localhost:4000/tourism/register', register)
             .then(res => console.log(res.data));
 
         this.setState({
@@ -154,24 +154,24 @@ export default class login extends Component {
                             </div>
                         </div>
                         <div className="form-group">
-                            <label className="col-md-2 control-label">Last Name: </label>
+                            <label className="col-md-2 control-label">Gender: </label>
                             <div className="col-md-4">
                                 <input type="text"
                                        className="form-control"
-                                       value={this.state.last_Name}
+                                       value={this.state.gender}
                                        className="form-control"
-                                       onChange={this.onChangeLast}
+                                       onChange={this.onChangeGender}
                                 />
                             </div>
                         </div>
                         <div className="form-group">
-                            <label className="col-md-2 control-label">Last Name: </label>
+                            <label className="col-md-2 control-label">Country: </label>
                             <div className="col-md-4">
                                 <input type="text"
                                        className="form-control"
-                                       value={this.state.last_Name}
+                                       value={this.state.country}
                                        className="form-control"
-                                       onChange={this.onChangeLast}
+                                       onChange={this.onChangeCountry}
                                 />
                             </div>
                         </div>
