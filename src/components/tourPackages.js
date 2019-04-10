@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-
+import Register from "./ht";
+/*** try to backend
 const Todo = props => (
     <tr>
         <td className={props.todo.todo_completed ? 'completed' : ''}>{props.todo.todo_description}</td>
@@ -11,9 +12,11 @@ const Todo = props => (
             <Link to={"/edit/"+props.todo._id}>Edit</Link>
         </td>
     </tr>
-)
+)*/
 
 export default class TodosList extends Component {
+
+    /**** try to backend
 
     constructor(props) {
         super(props);
@@ -45,21 +48,63 @@ export default class TodosList extends Component {
             return <Todo todo={currentTodo} key={i} />;
         });
     }
-
+*/
     render() {
         return (
-            <div>
-                <h3>Tour Packages</h3>
+            <div>&emsp;&emsp;
+                <h3>Our Packages</h3>
                 <table className="table table-striped" style={{ marginTop: 20 }}>
                     <thead>
                     <tr>
-                        <th>Description</th>
+                        <th>Tour Name</th>
+
 
                     </tr>
                     </thead>
                     <tbody>
-                    { this.todoList() }
+                    <tr>
+                        <td>Hill Country Tours</td>
+                        <td>
+                            <Link
+
+                                to="/hillCountry"
+
+                            >View More Details</Link>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Beach Tours</td>
+                        <td>
+                            <Link
+
+                                to="/register"
+
+                            >View More Details</Link>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wildlife & Adventure Tours</td>
+                        <td>
+                            <Link
+
+                                to="/register"
+
+                            >View More Details</Link>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cultural Tours</td>
+                        <td>
+                            <Link
+
+                                to="/register"
+
+                            >View More Details</Link>
+                        </td>
+                    </tr>
                     </tbody>
+
+
                 </table>
             </div>
         )

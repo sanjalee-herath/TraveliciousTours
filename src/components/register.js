@@ -16,7 +16,8 @@ export default class login extends Component {
         this.onChangeContactNo = this.onChangeContactNo.bind(this);
         this.onChangeEmail = this.onChangeEmail.bind(this);
         this.onChangeUsername = this.onChangeUsername.bind(this);
-        this.onChangePassword = this.onChangePassword.bind(this);
+        this.onChangeCPassword = this.onChangeCPassword.bind(this);
+
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
@@ -28,7 +29,7 @@ export default class login extends Component {
             email:'',
             contact_no:'',
             username: '',
-            password: '',
+            password1: '',
             Cpassword: '',
             user_type: 'tourist'
 
@@ -79,7 +80,7 @@ export default class login extends Component {
 
     onChangePassword(e) {
         this.setState({
-            password: e.target.value
+            password1: e.target.value
         });
     }
     onChangeCPassword(e) {
@@ -93,13 +94,13 @@ export default class login extends Component {
 
         console.log(`Form submitted:`);
         console.log(`Username: ${this.state.username}`);
-        console.log(`Password: ${this.state.password}`);
+        console.log(`Password: ${this.state.password1}`);
         console.log(`User_Type: ${this.state.user_type}`);
 
 
         const register = {
             username: this.state.username,
-            password: this.state.password,
+            password1: this.state.password1,
             user_type: this.state.user_type
 
         }
@@ -116,7 +117,8 @@ export default class login extends Component {
             email:'',
             contact_no:'',
             username: '',
-            password: '',
+            password1: '',
+            Cpassword: '',
             user_type: 'tourist'
         })
     }
@@ -214,17 +216,7 @@ export default class login extends Component {
                                 />
                             </div>
                         </div>
-                        <div className="form-group">
-                            <label className="col-md-2 control-label">Last Name: </label>
-                            <div className="col-md-4">
-                                <input type="text"
-                                       className="form-control"
-                                       value={this.state.passportNo}
-                                       className="form-control"
-                                       onChange={this.onChangePassportNo}
-                                />
-                            </div>
-                        </div>
+
                         <div className="form-group">
                             <label className="col-md-2 control-label">Enter username: </label>
                             <div className="col-md-4">
@@ -241,7 +233,7 @@ export default class login extends Component {
                             <div className="col-md-4">
                                 <input type="password"
                                        className="form-control"
-                                       value={this.state.password}
+                                       value={this.state.password1}
                                        className="form-control"
                                        onChange={this.onChangePassword}
                                 />
@@ -252,7 +244,7 @@ export default class login extends Component {
                             <div className="col-md-4">
                                 <input type="password"
                                        className="form-control"
-                                       value={this.state.password}
+                                       value={this.state.Cpassword}
                                        className="form-control"
                                        onChange={this.onChangeCPassword}
                                 />
@@ -260,8 +252,14 @@ export default class login extends Component {
                         </div>
                         <div className="form-group">
                             <div className="col-md-12">
-                                <input type="submit" value="Register" className="btn btn-primary" />
-                                &emsp;&emsp;
+                                <Link
+                                    className="btn btn-primary"
+                                    role="button"
+                                    to="/tourPackages"
+
+                                >
+                                   Register
+                                </Link>
 
                             </div>
                         </div>

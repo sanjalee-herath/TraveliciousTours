@@ -95,15 +95,15 @@ export default class login extends Component {
                     <div className="form-group">
                         <div className="col-md-12">
                         <input type="submit" value="Login" className="btn btn-primary" />
-                        &emsp;&emsp;
-                            <Link
-                                className="btn btn-pink"
-                                role="button"
-                                to="/register"
+                        &emsp;&emsp; <Link
+                            className="btn btn-pink"
+                            role="button"
+                            to="/register"
 
-                            >
-                                Sign Up
-                            </Link>
+                        >
+                            Sign Up
+                        </Link>
+
                     </div>
                     </div>
                 </form>

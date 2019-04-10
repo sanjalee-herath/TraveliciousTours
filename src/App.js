@@ -10,7 +10,8 @@ import Dashboard from "./components/dashboard";
 import packages from "./components/tourPackages";
 import Login from "./components/login";
 import register from "./components/register";
-
+import tourPackages from "./components/tourPackages";
+import ht from "./components/ht";
 
 import logo from "./logo.png";
 
@@ -21,8 +22,8 @@ class App extends Component {
                 <div id="page-container">
 
                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                        <a className="navbar-brand" href="https://codingthesmartway.com" target="_blank">
-                            <img src={logo} width="30" height="30" alt="CodingTheSmartWay.com" />
+                        <a className="navbar-brand">
+                            <img src={logo} width="30" height="30"  />
                         </a>
 
                         <div className="collpase nav-collapse">
@@ -59,6 +60,8 @@ class App extends Component {
                     <Route path="/edit/:id" component={EditTodo} />
                     <Route path="/create" component={CreateTodo} />
                     <Route path="/register" component={register} />
+                    <Route path="/tourPackages" component={tourPackages} />
+                    <Route path="/hillCountry" component={ht} />
 
                 </div>
             </Router>
