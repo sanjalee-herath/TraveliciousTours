@@ -13,7 +13,7 @@ import register from "./components/register";
 import tourPackages from "./components/tourPackages";
 import ht from "./components/ht";
 import booking from "./components/tourBooking";
-import total from "./components/tourDetails";
+import total from "./components/fareDetails";
 
 import logo from "./logo.png";
 
