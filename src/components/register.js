@@ -29,6 +29,7 @@ export default class login extends Component {
             contact_no:'',
             username: '',
             password: '',
+            Cpassword: '',
             user_type: 'tourist'
 
         }
@@ -81,6 +82,11 @@ export default class login extends Component {
             password: e.target.value
         });
     }
+    onChangeCPassword(e) {
+        this.setState({
+            Cpassword: e.target.value
+        });
+    }
 
     onSubmit(e) {
         e.preventDefault();
@@ -126,8 +132,8 @@ export default class login extends Component {
                         </h1>
                     </div>
                 </div>
-            <div className="row">
-                <div className="form-horizontal form-bordered col-sm-6" >
+
+                <div className="form-horizontal form-bordered " align="center" >
                     <br></br>
                     <h3>Sign Up</h3>
                     <form onSubmit={this.onSubmit}>
@@ -176,35 +182,49 @@ export default class login extends Component {
                             </div>
                         </div>
                         <div className="form-group">
-                            <label className="col-md-2 control-label">Last Name: </label>
+                            <label className="col-md-2 control-label">Passport No: </label>
                             <div className="col-md-4">
                                 <input type="text"
                                        className="form-control"
-                                       value={this.state.last_Name}
+                                       value={this.state.passportNo}
                                        className="form-control"
-                                       onChange={this.onChangeLast}
+                                       onChange={this.onChangePassportNo}
                                 />
                             </div>
                         </div>
                         <div className="form-group">
-                            <div className="col-md-12">
-                                <input type="submit" value="Login" className="btn btn-primary"/>
-                                &emsp;&emsp;
-                                <Link to="/register">
-                                    <button type="button">
-                                        Sign Up
-                                    </button>
-                                </Link>
+                            <label className="col-md-2 control-label">Email: </label>
+                            <div className="col-md-4">
+                                <input type="text"
+                                       className="form-control"
+                                       value={this.state.email}
+                                       className="form-control"
+                                       onChange={this.onChangeEmail}
+                                />
                             </div>
                         </div>
-                    </form>
-                </div>
-
-
-                <div className="form-horizontal form-bordered col-sm-6" >
-                    <br></br>
-                    <h3>Sign Up</h3>
-                    <form onSubmit={this.onSubmit}>
+                        <div className="form-group">
+                            <label className="col-md-2 control-label">contact_no: </label>
+                            <div className="col-md-4">
+                                <input type="text"
+                                       className="form-control"
+                                       value={this.state.contact_no}
+                                       className="form-control"
+                                       onChange={this.onChangeContactNo}
+                                />
+                            </div>
+                        </div>
+                        <div className="form-group">
+                            <label className="col-md-2 control-label">Last Name: </label>
+                            <div className="col-md-4">
+                                <input type="text"
+                                       className="form-control"
+                                       value={this.state.passportNo}
+                                       className="form-control"
+                                       onChange={this.onChangePassportNo}
+                                />
+                            </div>
+                        </div>
                         <div className="form-group">
                             <label className="col-md-2 control-label">Enter username: </label>
                             <div className="col-md-4">
@@ -219,7 +239,7 @@ export default class login extends Component {
                         <div className="form-group">
                             <label className="col-md-2 control-label">Enter password: </label>
                             <div className="col-md-4">
-                                <input type="text"
+                                <input type="password"
                                        className="form-control"
                                        value={this.state.password}
                                        className="form-control"
@@ -228,19 +248,26 @@ export default class login extends Component {
                             </div>
                         </div>
                         <div className="form-group">
+                            <label className="col-md-2 control-label">Confirm password: </label>
+                            <div className="col-md-4">
+                                <input type="password"
+                                       className="form-control"
+                                       value={this.state.password}
+                                       className="form-control"
+                                       onChange={this.onChangeCPassword}
+                                />
+                            </div>
+                        </div>
+                        <div className="form-group">
                             <div className="col-md-12">
-                                <input type="submit" value="Login" className="btn btn-primary"/>
+                                <input type="submit" value="Register" className="btn btn-primary" />
                                 &emsp;&emsp;
-                                <Link to="/register">
-                                    <button type="button">
-                                        Sign Up
-                                    </button>
-                                </Link>
+
                             </div>
                         </div>
                     </form>
                 </div>
-            </div>
+
             </div>
         )
     }
