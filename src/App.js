@@ -12,6 +12,7 @@ import Login from "./components/login";
 import register from "./components/register";
 import tourPackages from "./components/tourPackages";
 import ht from "./components/ht";
+import booking from "./components/tourBooking";
 
 import logo from "./logo.png";
 
@@ -62,6 +63,7 @@ class App extends Component {
                     <Route path="/register" component={register} />
                     <Route path="/tourPackages" component={tourPackages} />
                     <Route path="/hillCountry" component={ht} />
+                    <Route path="/booking" component={booking} />
 
                 </div>
             </Router>
