@@ -24,7 +24,7 @@ class App extends Component {
 
                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
                         <a className="navbar-brand">
-                            <img src={logo} width="30" height="30"  />
+                            <img src={logo} width="30" height="30"  />TraveliciousTours
                         </a>
 
                         <div className="collpase nav-collapse">
