@@ -125,7 +125,7 @@ export default class login extends Component {
 
     render() {
         return (
-            <div id="page-content">
+            <div className="page-content  bg-secondary">
                 <div className="content-header">
                     <div className="header-section">
                         <br></br>
@@ -138,9 +138,10 @@ export default class login extends Component {
                 <div className="form-horizontal form-bordered " align="center" >
                     <br></br>
                     <h3>Sign Up</h3>
+                    <br></br>
                     <form onSubmit={this.onSubmit}>
                         <div className="form-group">
-                            <label className="col-md-2 control-label"> First Name: </label>
+                            <label className="col-md-2 control-label"> <b>First Name: </b> </label>
                             <div className="col-md-4">
                                 <input type="text"
                                        className="form-control"
@@ -151,7 +152,7 @@ export default class login extends Component {
                             </div>
                         </div>
                         <div className="form-group">
-                            <label className="col-md-2 control-label">Last Name: </label>
+                            <label className="col-md-2 control-label"> <b> Last Name: </b> </label>
                             <div className="col-md-4">
                                 <input type="text"
                                        className="form-control"
@@ -162,7 +163,7 @@ export default class login extends Component {
                             </div>
                         </div>
                         <div className="form-group">
-                            <label className="col-md-2 control-label">Gender: </label>
+                            <label className="col-md-2 control-label"> <b> Gender: </b> </label>
                             <div className="col-md-4">
                                 <input type="text"
                                        className="form-control"
@@ -173,7 +174,7 @@ export default class login extends Component {
                             </div>
                         </div>
                         <div className="form-group">
-                            <label className="col-md-2 control-label">Country: </label>
+                            <label className="col-md-2 control-label"> <b>Country:</b> </label>
                             <div className="col-md-4">
                                 <input type="text"
                                        className="form-control"
@@ -184,7 +185,7 @@ export default class login extends Component {
                             </div>
                         </div>
                         <div className="form-group">
-                            <label className="col-md-2 control-label">Passport No: </label>
+                            <label className="col-md-2 control-label"><b>Passport No:</b> </label>
                             <div className="col-md-4">
                                 <input type="text"
                                        className="form-control"
@@ -195,7 +196,7 @@ export default class login extends Component {
                             </div>
                         </div>
                         <div className="form-group">
-                            <label className="col-md-2 control-label">Email: </label>
+                            <label className="col-md-2 control-label"><b>Email: </b></label>
                             <div className="col-md-4">
                                 <input type="text"
                                        className="form-control"
@@ -206,7 +207,7 @@ export default class login extends Component {
                             </div>
                         </div>
                         <div className="form-group">
-                            <label className="col-md-2 control-label">contact_no: </label>
+                            <label className="col-md-2 control-label"><b>contact_no:</b> </label>
                             <div className="col-md-4">
                                 <input type="text"
                                        className="form-control"
@@ -218,7 +219,7 @@ export default class login extends Component {
                         </div>
 
                         <div className="form-group">
-                            <label className="col-md-2 control-label">Enter username: </label>
+                            <label className="col-md-2 control-label"><b>Enter username: </b></label>
                             <div className="col-md-4">
                                 <input type="text"
                                        className="form-control"
@@ -229,7 +230,7 @@ export default class login extends Component {
                             </div>
                         </div>
                         <div className="form-group">
-                            <label className="col-md-2 control-label">Enter password: </label>
+                            <label className="col-md-2 control-label"><b>Enter password: </b></label>
                             <div className="col-md-4">
                                 <input type="password"
                                        className="form-control"
@@ -240,7 +241,7 @@ export default class login extends Component {
                             </div>
                         </div>
                         <div className="form-group">
-                            <label className="col-md-2 control-label">Confirm password: </label>
+                            <label className="col-md-2 control-label"> <b>Confirm password: </b></label>
                             <div className="col-md-4">
                                 <input type="password"
                                        className="form-control"

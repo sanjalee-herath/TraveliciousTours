@@ -11,7 +11,7 @@ export default class Dashboard extends Component {
 
     render() {
         return (
-            <div id="page-content">
+            <div className="page-content bg-secondary">
 
                 <br></br><br></br>
              <div class="block">
@@ -24,7 +24,10 @@ export default class Dashboard extends Component {
                 </div>
 
              </div>
+                <br></br>
+                <br></br> <br></br> <br></br> <br></br> <br></br>
                 </div>
+
 
 
      )

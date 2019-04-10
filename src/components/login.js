@@ -66,12 +66,13 @@ export default class login extends Component {
     render() {
         return (
 
-            <div class="form-horizontal form-bordered" align="center">
+            <div class="form-horizontal form-bordered  bg-secondary" align="center">
                 <br></br>
                 <h3>Login</h3>
+                <br></br><br></br>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
-                        <label class="col-md-2 control-label" >Enter username: </label>
+                        <label class="col-md-2 control-label" ><b>Enter username:</b> </label>
                         <div className="col-md-4">
                         <input  type="text"
                                 className="form-control"
@@ -82,7 +83,7 @@ export default class login extends Component {
                         </div>
                     </div>
                     <div className="form-group">
-                        <label class="col-md-2 control-label" >Enter password: </label>
+                        <label class="col-md-2 control-label" > <b> Enter password: </b></label>
                         <div className="col-md-4">
                         <input  type="text"
                                 className="form-control"
@@ -96,7 +97,7 @@ export default class login extends Component {
                         <div className="col-md-12">
                         <input type="submit" value="Login" className="btn btn-primary" />
                         &emsp;&emsp; <Link
-                            className="btn btn-pink"
+                            className="btn btn-success primary-btn pull-right"
                             role="button"
                             to="/register"
 
@@ -106,6 +107,10 @@ export default class login extends Component {
 
                     </div>
                     </div>
+                    <br></br>
+                    <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
+                    <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
+
                 </form>
 
             </div>

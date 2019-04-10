@@ -7,7 +7,7 @@ export default class tourDetails extends Component {
 
     render() {
         return (
-            <div class="card" style="width: 18rem;">
+            <div class="card" >
             
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>

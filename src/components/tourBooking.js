@@ -66,49 +66,86 @@ export default class login extends Component {
     render() {
         return (
 
-            <div class="form-horizontal form-bordered" align="center">
+            <div class="form-horizontal form-bordered bg-secondary" align="center">
                 <br></br>
                 <h3>Booking Tour Package</h3>
+                <br></br>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
-                        <label class="col-md-2 control-label" >Select Tour Package  </label>
-                        <div className="col-md-4">
-                            <select name="status">
+                        <label class="col-md-2 control-label " ><b>Select Tour Package </b> </label>
+                        <div className="col-md-4" >
+                            <select name="option" className="form-control">
+                                <option value=""></option>
 
-                                <option value="Mr">Hill Country Tours</option>
-
-                                <option value="Mrs">Mrs</option>
+                                <option value="hill1">Hill Country Tours</option>
+                                <option value="beach1">Beach Tours</option>
+                                <option value="widl1">Wildlife & Adventure Tours</option>
+                                <option value="cult1">Cultural Tours</option>
 
                             </select>
                         </div>
                     </div>
                     <div className="form-group">
-                        <label class="col-md-2 control-label" > </label>
+                        <label className="col-md-2 control-label"><b> Customer Name </b></label>
                         <div className="col-md-4">
-                            <input  type="text"
-                                    className="form-control"
-                                    value={this.state.password}
-                                    class="form-control"
-                                    onChange={this.onChangePassword}
+                            <input type="text"
+                                   className="form-control"
+                                   value={this.state.password}
+                                   className="form-control"
+                                   onChange={this.onChangePassword}
+                            />
+                        </div>
+                    </div>
+
+                    <div className="form-group">
+                        <label className="col-md-2 control-label"> <b>No. of people attending </b> </label>
+                        <div className="col-md-4">
+                            <input type="number"
+                                   className="form-control"
+                                   placeholder="No of adults "
+                                   value={this.state.password}
+                                   className="form-control"
+                                   onChange={this.onChangePassword}
+                            />
+                        </div>
+                        <div className="col-md-4">
+                            <input type="number"
+                                   className="form-control"
+                                   placeholder="No of children "
+                                   value={this.state.password}
+                                   className="form-control"
+                                   onChange={this.onChangePassword}
+                            />
+                        </div>
+                    </div>
+                    <div className="form-group">
+                        <label className="col-md-2 control-label"><b> Staring Date </b> </label>
+                        <div className="col-md-4">
+                            <input type="date"
+                                   class="form-control" placeholder="yyyy-mm-dd"
+                                   value={this.state.password}
+                                   className="form-control"
+                                   onChange={this.onChangePassword}
                             />
                         </div>
                     </div>
                     <div className="form-group">
                         <div className="col-md-12">
-                            <input type="submit" value="Login" className="btn btn-primary" />
+
                             &emsp;&emsp; <Link
-                            className="btn btn-pink"
+                            className="btn btn-success primary-btn pull-right"
                             role="button"
-                            to="/register"
+                            to="/total"
 
                         >
-                            Sign Up
+                            Booking
                         </Link>
 
                         </div>
                     </div>
                 </form>
-
+                <br></br>
+                <br></br> <br></br> <br></br> <br></br> <br></br>
             </div>
         )
     }

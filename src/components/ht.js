@@ -52,13 +52,14 @@ export default class TodosList extends Component {
      */
     render() {
         return (
-            <div>&emsp;&emsp;
-                <h3>Our Packages</h3>
-                <br></br>
+            <div><br></br>
+                <h3 align="center">Hill Country Tour</h3>
+
+
                 <table  style={{ marginTop: 20 }}>
                     <thead>
                     <tr>
-                        <th width="15%">&emsp;&emsp;Hill Country Tour</th>
+                        <th width="15%">&emsp;&emsp;</th>
 
 
                     </tr>
@@ -90,7 +91,23 @@ export default class TodosList extends Component {
                         <td></td>
                         <td width="85%" height="60%">
                             <b> Price per person (Rs): 6000 </b>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <Link
+                            className="btn btn-warning"
+                                role="button"
+                                to="/booking"
+
+                            >
+                            <b> Book Now </b>
+                            </Link>
                         </td></tr>
+                    <tr>
+                        <td></td>
+                        <td width="85%" height="60%">
+                            <b> Meals, Accomodation, Transfer, Sightseeing </b>
+                        </td>
+                        <td> </td>
+                    </tr>
 
                     </tbody>
 
@@ -105,14 +122,7 @@ export default class TodosList extends Component {
                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src={f} width="70%" height="70%"  />
 
                 <br></br>
-                &emsp;&emsp; <Link
-                    className="btn btn-pink"
-                    role="button"
-                    to="/booking"
 
-                >
-                    Book Now
-                </Link>
             </div>
         )
     }

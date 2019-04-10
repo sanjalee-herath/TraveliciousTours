@@ -13,6 +13,7 @@ import register from "./components/register";
 import tourPackages from "./components/tourPackages";
 import ht from "./components/ht";
 import booking from "./components/tourBooking";
+import total from "./components/tourDetails";
 
 import logo from "./logo.png";
 
@@ -20,34 +21,35 @@ class App extends Component {
     render() {
         return (
             <Router>
-                <div id="page-container">
+                <div className="page-container ">
 
-                    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+
+                    <nav className="navbar navbar-expand-lg navbar-light bg-dark text-light">
                         <a className="navbar-brand">
                             <img src={logo} width="30" height="30"  />TraveliciousTours
                         </a>
 
                         <div className="collpase nav-collapse">
-                            <ul className="navbar-nav mr-auto">
+                            <ul className="navbar-nav mr-auto ">
                                 <li className="navbar-item">
-                                    <Link to="/" className="nav-link">Dashboard</Link>
+                                    <Link to="/" className="nav-link text-light">Dashboard</Link>
                                 </li>
                                 &emsp;&emsp;
                                 <li className="navbar-item">
-                                    <Link to="/packages" className="nav-link">Tour Packages</Link>
+                                    <Link to="/packages" className="nav-link text-light">Tour Packages</Link>
                                 </li>
                                 &emsp;&emsp;
                                 <li className="navbar-item">
-                                    <Link to="/" className="nav-link">Contact Us</Link>
+                                    <Link to="/" className="nav-link text-light">Contact Us</Link>
                                 </li>
                                 &emsp;&emsp;
                                 <li className="navbar-item">
-                                    <Link to="/" className="nav-link">About Us</Link>
+                                    <Link to="/" className="nav-link text-light">About Us</Link>
                                 </li>
 
                                 &emsp;&emsp;
                                 <li className="navbar-item" style={{align:"center"}}>
-                                    <Link to="/login" className="nav-link">Login/Sign Up</Link>
+                                    <Link to="/login" className="nav-link text-light">Login/Sign Up</Link>
                                 </li>
 
                             </ul>
@@ -64,8 +66,10 @@ class App extends Component {
                     <Route path="/tourPackages" component={tourPackages} />
                     <Route path="/hillCountry" component={ht} />
                     <Route path="/booking" component={booking} />
+                    <Route path="/total" component={total} />
 
                 </div>
+
             </Router>
 
 
